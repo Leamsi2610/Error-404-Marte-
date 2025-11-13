@@ -3,6 +3,95 @@
   font-weight: 400;
   font-style: normal;
 }
-.h1 {
- font-size: large;
+
+h1 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-family: "Share Tech", sans-serif;
+  color: aliceblue;
+}
+
+p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  line-height: clamp(1.4, 1.6, 1.8);
+  font-family: "Share Tech", sans-serif;
+  color: aliceblue;
+}
+
+body {
+  /* Fondo negro, típico del espacio */
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  /* Ocupa toda la ventana del navegador */
+  width: 100vw;
+  height: 100vh;
+  /* Esconde el posible scroll */
+  overflow: hidden;
+}
+
+#star-container {
+  /* El contenedor de las estrellas debe ocupar todo el espacio */
+  width: 100%;
+  height: 100%;
+  /* Permite que las estrellas se posicionen dentro de él */
+  position: relative;
+  /* Asegura que los eventos del ratón se capturen */
+  cursor: default;
+}
+
+.centered {
+  position: relative; /* queda dentro del contexto apilado del contenedor */
+  z-index: 10; /* por encima de las estrellas */
+  max-width: 90%;
+  padding: 1rem;
+  pointer-events: auto; /* permite interacción si hay enlaces/botones */
+  color: aliceblue;
+}
+/* Opcional: asegurar texto centrado */
+h1,
+p {
+  text-align: center;
+}
+
+.star {
+  /* Estilo básico de la estrella (un simple círculo blanco) */
+  background-color: white;
+  border-radius: 50%; /* Hace que sea un círculo */
+  position: absolute; /* Permite posicionarlas libremente */
+  pointer-events: none; /* Importante: Ignora la estrella para que el evento de ratón sea capturado por el contenedor, no por la estrella individual */
+  /* Agregamos una transición suave para que el movimiento sea sutil */
+  transition: transform 0.5s ease-out;
+  /* El tamaño será asignado por JavaScript */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #001f3f; /* Fondo oscuro o del color que desees */
+}
+
+#float-container {
+  position: relative;
+  width: 5%;
+  height: 5%;
+}
+
+.float-element {
+  position: absolute;
+  /* Usamos transform para posicionar y animar, es más eficiente */
+  transform: translate(var(--initial-x), var(--initial-y));
+  /* Transición suave para todos los movimientos */
+  transition: transform 0.8s ease-out;
+  /* Evita que el ratón interactúe con el div. Lo manejamos en el contenedor padre. */
+  pointer-events: none;
+}
+
+.float-element img {
+  /* Ajusta el tamaño de tus PNGs. Por ejemplo, 100px. */
+  width: 100px;
+  height: auto;
+  display: block;
 }
