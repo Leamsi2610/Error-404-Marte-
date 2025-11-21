@@ -1,4 +1,4 @@
-# Error-404-Marte- Hecho por Sara Fisac, Alonso Gallego, Ismael Haro, Ana Pérez y Laura Suárez  https://leamsi2610.github.io/Error-404-Marte-/404.html
+# Error-404-Marte- Hecho por Sara Fisac, Alonso Gallego, Ismael Haro, Ana Pérez y Laura Suárez  [https://leamsi2610.github.io/Error-404-Marte-/404.html](https://leamsi2610.github.io/Error-404-Marte-/t)
 # De qué va nuestro proyecto
 Nuestro objetivo era crear una página de Error 404 que tuviera personalidad y que además encajara con una temática espacial divertida. La idea era convertir la página en una pequeña escena en la que un astronauta acaba en Marte por error, haciendo referencia al error 404. Así, si alguien se pierde en la web, al menos aterriza en un lugar curioso: un “Marte improvisado” lleno de elementos flotantes, colores suaves y un mensaje simpático.
 # Cómo nos organizamos como equipo
