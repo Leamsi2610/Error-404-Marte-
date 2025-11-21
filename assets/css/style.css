@@ -91,7 +91,7 @@ body {
 
 .float-element img {
   /* Ajusta el tamaño de tus PNGs. Por ejemplo, 100px. */
-  width: 100px;
+  width: clamp(20px, 10vw, 100px);
   height: auto;
   display: block;
 }
